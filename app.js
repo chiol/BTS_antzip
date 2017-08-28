@@ -4,6 +4,7 @@ var app = express();
 if(typeof require !== 'undefined') XLSX = require("xlsx");
 const wb = XLSX.readFile('list.xlsx');
 var ws = wb.Sheets.Sheet1;
+console.log(ws);
 function search(name,phone) {
   for(names in ws){
     if(name == ws[names].v){
@@ -13,7 +14,6 @@ function search(name,phone) {
           name2:ws['H'+names.slice(1)].v,
           phone:ws['I'+names.slice(1)].v,
           address:ws['K'+names.slice(1)].v,
-          message:ws['L'+names.slice(1)].v,
           email:ws['M'+names.slice(1)].v,
           price:ws['Q'+names.slice(1)].v,
           count:ws['R'+names.slice(1)].v
@@ -23,6 +23,7 @@ function search(name,phone) {
   }
   return false;
 }
+
 //----
 app.use(express.static('public'));
 //template
