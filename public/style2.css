@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600');
+
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+}
+
 *    { margin:0 auto; padding: 0; }
 body { font-family: 'LotteMartDream', sans-serif; font-weight: 400; font-size: 9pt; color: #405983;  background-color: #B3B3B3; -webkit-appearance: none; }
 img  { border: 0; }
-a		  { text-decoration: none; color: #405983; }
+a		 { text-decoration: none; color: #405983; }
 
 /* media query*/
 @media all and (max-width : 340px) { /* MOBILE */

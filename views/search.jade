@@ -7,19 +7,21 @@ html
     link(rel="stylesheet" href="webfont.css")
   body
     #container
-      .title title
-      .notice notice
+      .title 1차 컴백앨범 공구 확인 페이지
+      .notice
       form
         .main
           if check == false
             p.info 찾을 수 없습니다.
           else
-            p.info name <br/> #{check.name}
-            p.info address <br/> #{check.address}
+            p.info 입금자명 <br/> #{check.name1}
+            p.info 이름 <br/> #{check.name2}
+            p.info 번호 <br/> #{check.phone}
+            p.info 주소 <br/> #{check.address}
             br
-            br
-            p.info phone <br/> #{check.phone}
-            p.info price <br/> #{check.price}
+            p.info 이메일 <br/> #{check.email}
+            p.info 가격 <br/> #{check.price}
+            p.info 수량 <br/> #{check.count}
         .link
           a(href="http://antzip.net/" target="_blank") antzip
         .previous
