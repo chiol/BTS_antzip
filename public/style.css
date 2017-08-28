@@ -9,7 +9,7 @@
 
 /*reset*/
 *    { margin:0 auto; padding: 0; }
-body { font-family: 'LotteMartDream', sans-serif; font-weight: 400; font-size: 9pt; color: #405983;  background-color: #ffe9ef; -webkit-appearance: none; }
+body { font-family: 'LotteMartDream', sans-serif; font-weight: 400; font-size: 9pt; color: #405983;  background-color: #B3B3B3; -webkit-appearance: none; }
 img  { border: 0; }
 li   { list-style: none; }
 input { -webkit-appearance: none; -webkit-border-radius:0px;}
@@ -57,7 +57,7 @@ a:active  { text-decoration: none; color: #405983; }
 }
 
 .mainForm {
-    background-color: #e3f8ff;
+    background-color: #E8E8E8;
     padding: 40px 40px 30px 40px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -86,7 +86,7 @@ a:active  { text-decoration: none; color: #405983; }
     margin-bottom: 20px;
     border: none;
     border-bottom: 1px solid #31bccc;
-    background-color: #e3f8ff;
+    background-color: #E8E8E8;
     font-family: 'LotteMartDream', sans-serif; font-weight: 400; font-size: 1.2em; color: #31bccc;
 }
 
@@ -106,7 +106,7 @@ a:active  { text-decoration: none; color: #405983; }
     color: #405983;
     border: none;
     background: none;
-    background-color: #fffde9;
+    background-color: #FFC600;
     transition-duration: 0.5s;
 }
 
@@ -114,49 +114,4 @@ a:active  { text-decoration: none; color: #405983; }
     background-color: #31bccc;
     color: #ffffff;
     transition-duration: 0.5s;
-}
-
-
-/* result */
-.type {
-    display: block;
-    width: 40px;
-    padding: 5px;
-    margin-bottom: 10px;
-    font-size: 0.6em;
-    text-align: center;
-    background-color: #31bccc;
-    color: #ffffff;
-    border-radius: 15px;
-}
-
-.payinfo {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 1.5em;
-}
-
-.mainForm table{
-    font-family: 'LotteMartDream', sans-serif;
-    width: 100%;
-    border-collapse: collapse;
-
-}
-
-.resultTable tr {
-}
-
-.resultTable td {
-    border-bottom: 1px solid #31bccc;
-    padding: 15px 0;
-}
-
-.resultTable td:nth-child(odd){
-    width: 30%;
-    vertical-align: top;
-}
-
-.resultTable td:nth-child(even) {
-    width: auto;
-    vertical-align: top;
 }
