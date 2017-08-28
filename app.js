@@ -7,15 +7,16 @@ var ws = wb.Sheets.Sheet1;
 function search(name,phone) {
   for(names in ws){
     if(name == ws[names].v){
-      if(phone == ws['C'+names.slice(1)].v){
+      if(phone == ws['I'+names.slice(1)].v){
         return {
-          name1:ws['A'+names.slice(1)].v,
-          name2:ws['B'+names.slice(1)].v,
-          phone:ws['C'+names.slice(1)].v,
-          address:ws['E'+names.slice(1)].v,
-          email:ws['G'+names.slice(1)].v,
-          price:ws['H'+names.slice(1)].v,
-          count:ws['I'+names.slice(1)].v
+          name1:ws['E'+names.slice(1)].v,
+          name2:ws['H'+names.slice(1)].v,
+          phone:ws['I'+names.slice(1)].v,
+          address:ws['K'+names.slice(1)].v,
+          message:ws['L'+names.slice(1)].v,
+          email:ws['M'+names.slice(1)].v,
+          price:ws['Q'+names.slice(1)].v,
+          count:ws['R'+names.slice(1)].v
         };
       }
     }
