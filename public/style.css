@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600');
+
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+}
+
+/*reset*/
+*    { margin:0 auto; padding: 0; }
+body { font-family: 'LotteMartDream', sans-serif; font-weight: 400; font-size: 9pt; color: #405983;  background-color: #ffe9ef; -webkit-appearance: none; }
+img  { border: 0; }
+li   { list-style: none; }
+input { -webkit-appearance: none; -webkit-border-radius:0px;}
+a		  { text-decoration: none; color: #405983; }
+a:link	  { text-decoration: none; color: #405983; }
+a:visited { text-decoration: none; color: #405983; }
+a:hover   { text-decoration: none; color: #31bccc; transition-duration:1s; }
+a:active  { text-decoration: none; color: #405983; }
+
+
+/* media query*/
+@media all and (max-width : 340px) { /* MOBILE */
+	#container { width: 100%; margin-top: 0;}
+	.link, .search { width: 50%; }
+	.link a, .search_btn { width: 100%; }
+}
+
+
+@media all and (min-width : 341px) { /* DESKTOP */
+	#container { width:340px; margin: 50px auto;
+	-webkit-box-shadow: 0px 10px 23px -3px rgba(0,0,0,0.19);
+    -moz-box-shadow: 0px 10px 23px -3px rgba(0,0,0,0.19);
+    box-shadow: 0px 10px 23px -3px rgba(0,0,0,0.19);}
+	.title, .notice, .mainform { width: 260px; }
+	.link a, .search_btn { width: 170px; }
+}
+
+
+/* index style */
+#container {
+    overflow: hidden;
+    background-color: #ffffff;
+    transition-duration: 0.5s;
+}
+
+.title {
+    padding: 40px 40px;
+    font-size: 3em;
+    color: #405983;
+}
+
+.notice {
+    padding: 0 40px 40px 40px;
+    font-size: 1em;
+}
+
+.mainForm {
+    background-color: #e3f8ff;
+    padding: 40px 40px 30px 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.link {
+    float: left;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.link a {
+    display: block;
+    padding: 20px 0;
+    font-size: 1em;
+    transition-duration: 0.5s;
+}
+.link a:hover {
+    background-color: #31bccc;
+    color: #ffffff;
+    transition-duration: 0.5s;
+}
+
+.input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #31bccc;
+    background-color: #e3f8ff;
+    font-family: 'LotteMartDream', sans-serif; font-weight: 400; font-size: 1.2em; color: #31bccc;
+}
+
+.search {
+    float: right;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fffde9;
+}
+
+.search_btn {
+    display: block;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    color: #405983;
+    border: none;
+    background: none;
+    background-color: #fffde9;
+    transition-duration: 0.5s;
+}
+
+.search_btn:hover {
+    background-color: #31bccc;
+    color: #ffffff;
+    transition-duration: 0.5s;
+}
+
+
+/* result */
+.type {
+    display: block;
+    width: 40px;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #31bccc;
+    color: #ffffff;
+    border-radius: 15px;
+}
+
+.payinfo {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.5em;
+}
+
+.mainForm table{
+    font-family: 'LotteMartDream', sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.resultTable tr {
+}
+
+.resultTable td {
+    border-bottom: 1px solid #31bccc;
+    padding: 15px 0;
+}
+
+.resultTable td:nth-child(odd){
+    width: 30%;
+    vertical-align: top;
+}
+
+.resultTable td:nth-child(even) {
+    width: auto;
+    vertical-align: top;
+}

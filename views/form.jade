@@ -2,11 +2,21 @@ doctype html
 html
   head
     meta(charset="utf-8")
+    link(rel="stylesheet" href="style.css")
+    link(rel="stylesheet" href="webfont.css")
   body
-    form(action='/search' method='get')
-      p
-        input(type='text' name = 'name' placeholder='이름')
-      p
-        input(type='text' name = 'phone' placeholder='번호')
-      p
-        input(type='submit')
+    #container
+      .title
+        img(src="" alt="img")
+      .notice notice
+      form(action='/search' method='get' accept-charset="utf-8")
+        .mainForm
+          p.inputTag
+            input(type='text' name = 'name' class="input" placeholder='이름' required)
+          p.inputTag
+            input(type='text' name = 'phone' class="input" placeholder='번호' required)
+        .link
+          a(href="http://antzip.net/" target="_blank") antzip
+        .search
+          p
+            input(type='submit' class="search_btn")

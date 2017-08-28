@@ -1,5 +1,22 @@
 doctype html
 html
   head
+    meta(charset="utf-8")
   body
-    div #{check}
+    div
+    if check == false
+      h1 hel
+    else
+      table(border = 1)
+        tr
+          td 이름
+          td 주소
+          td 전화번호
+          td 입금액
+          td 수량
+        tr
+          td #{check.name}
+          td #{check.address}
+          td #{check.phone}
+          td #{check.price}
+          td #{check.count}
