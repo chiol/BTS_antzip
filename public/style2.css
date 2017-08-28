@@ -1,24 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600');
-
-@font-face {
-  font-family: 'LotteMartDream';
-  font-style: normal;
-  font-weight: 400;
-  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
-}
-
-/*reset*/
 *    { margin:0 auto; padding: 0; }
 body { font-family: 'LotteMartDream', sans-serif; font-weight: 400; font-size: 9pt; color: #405983;  background-color: #B3B3B3; -webkit-appearance: none; }
 img  { border: 0; }
-li   { list-style: none; }
-input { -webkit-appearance: none; -webkit-border-radius:0px;}
 a		  { text-decoration: none; color: #405983; }
-a:link	  { text-decoration: none; color: #405983; }
-a:visited { text-decoration: none; color: #405983; }
-a:hover   { text-decoration: none; color: #31bccc; transition-duration:1s; }
-a:active  { text-decoration: none; color: #405983; }
-
 
 /* media query*/
 @media all and (max-width : 340px) { /* MOBILE */
@@ -33,35 +16,37 @@ a:active  { text-decoration: none; color: #405983; }
 	-webkit-box-shadow: 0px 10px 23px -3px rgba(0,0,0,0.19);
     -moz-box-shadow: 0px 10px 23px -3px rgba(0,0,0,0.19);
     box-shadow: 0px 10px 23px -3px rgba(0,0,0,0.19);}
-	.title, .notice, .mainForm { width: 260px; }
+	.title, .notice, .main { width: 260px; }
 	.link a, .search_btn { width: 170px; }
 }
 
-
-/* index style */
 #container {
     overflow: hidden;
     background-color: #ffffff;
     transition-duration: 0.5s;
 }
-
 .title {
     padding: 40px 40px;
     font-size: 3em;
     color: #405983;
 }
-
 .notice {
     padding: 0 40px 40px 40px;
     font-size: 1em;
 }
-
-.mainForm {
+.main {
     background-color: #E8E8E8;
     padding: 40px 40px 30px 40px;
     font-family: 'Montserrat', sans-serif;
 }
-
+.info {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #E8E8E8;
+    font-family: 'LotteMartDream', sans-serif; font-weight: 400; font-size: 1.2em; color: #31bccc;
+}
 .link {
     float: left;
     text-align: center;
@@ -79,25 +64,14 @@ a:active  { text-decoration: none; color: #405983; }
     color: #ffffff;
     transition-duration: 0.5s;
 }
-
-.input {
-    width: 100%;
-    height: 30px;
-    margin-bottom: 20px;
-    border: none;
-    border-bottom: 1px solid #31bccc;
-    background-color: #E8E8E8;
-    font-family: 'LotteMartDream', sans-serif; font-weight: 400; font-size: 1.2em; color: #31bccc;
-}
-
-.search {
+.previous {
     float: right;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     background-color: #fffde9;
 }
 
-.search_btn {
+.previous_btn {
     display: block;
     padding: 20px 0;
     margin: 0;
@@ -110,7 +84,7 @@ a:active  { text-decoration: none; color: #405983; }
     transition-duration: 0.5s;
 }
 
-.search_btn:hover {
+.previous_btn:hover {
     background-color: #31bccc;
     color: #ffffff;
     transition-duration: 0.5s;

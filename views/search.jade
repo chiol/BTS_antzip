@@ -3,21 +3,20 @@ html
   head
     meta(charset="utf-8")
     title 방탄소년단 앨범공동구매 확인페이지
+    link(rel="stylesheet" href="style2.css")
+    link(rel="stylesheet" href="webfont.css")
   body
-    div
-    if check == false
-      p 찾을 수 없습니다.
-    else
-      table(border = 1)
-        tr
-          td 이름
-          td 주소
-          td 전화번호
-          td 입금액
-          td 수량
-        tr
-          td #{check.name}
-          td #{check.address}
-          td #{check.phone}
-          td #{check.price}
-          td #{check.count}
+    #container
+      .title
+      .notice
+      .main
+        .info
+          p name
+          p address
+          p phone
+          p price
+      .link
+        a(href="http://antzip.net/" target="_blank") antzip
+      .previous
+        p
+          input(type='button' class='previous_btn' onclick="location.href='/'");
