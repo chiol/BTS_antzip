@@ -7,16 +7,21 @@ html
     link(rel="stylesheet" href="webfont.css")
   body
     #container
-      .title
-      .notice
-      .main
-        .info
-          p name
-          p address
-          p phone
-          p price
-      .link
-        a(href="http://antzip.net/" target="_blank") antzip
-      .previous
-        p
-          input(type='button' class='previous_btn' onclick="location.href='/'");
+      .title title
+      .notice notice
+      form
+        .main
+          if check == false
+            p.info 찾을 수 없습니다.
+          else
+            p.info name <br/> #{check.name}
+            p.info address <br/> #{check.address}
+            br
+            br
+            p.info phone <br/> #{check.phone}
+            p.info price <br/> #{check.price}
+        .link
+          a(href="http://antzip.net/" target="_blank") antzip
+        .previous
+          p
+            input(type='button' class="previous_btn" value="이전" onclick="location.href='/';")
