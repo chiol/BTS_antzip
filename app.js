@@ -16,7 +16,8 @@ function search(name,phone) {
           address:ws['K'+names.slice(1)].v,
           email:ws['M'+names.slice(1)].v,
           price:ws['Q'+names.slice(1)].v,
-          count:ws['R'+names.slice(1)].v
+          count:ws['R'+names.slice(1)].v,
+          etc:ws['S'+names.slice(1)].v
         };
       }
     }
