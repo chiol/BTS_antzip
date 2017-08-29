@@ -4,7 +4,6 @@ var app = express();
 if(typeof require !== 'undefined') XLSX = require("xlsx");
 const wb = XLSX.readFile('list.xlsx');
 var ws = wb.Sheets.Sheet1;
-console.log(ws);
 function search(name,phone) {
   for(names in ws){
     if(name == ws[names].v){
@@ -24,7 +23,6 @@ function search(name,phone) {
   }
   return false;
 }
-
 //----
 app.use(express.static('public'));
 //template
