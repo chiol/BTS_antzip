@@ -1,26 +1,44 @@
 doctype html
 html
   head
-    meta(charset="utf-8")
-    title 방탄소년단 앨범공동구매 확인페이지
-    link(rel="stylesheet" href="style.css")
-    link(rel="stylesheet" href="webfont.css")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes")
+    meta(charset='utf-8')
+    |     
+    title &#xBC29;&#xD0C4;&#xC18C;&#xB144;&#xB2E8; &#xC568;&#xBC94;&#xACF5;&#xB3D9;&#xAD6C;&#xB9E4; &#xD655;&#xC778;&#xD398;&#xC774;&#xC9C0;
+    |     
+    link(rel='stylesheet', href='style.css')
+    |     
+    link(rel='stylesheet', href='webfont.css')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes')
+  |   
   body
     #container
       .title
-        img(src="" alt="1차 컴백앨범 공구 확인 페이지")
+        img(src='', alt='1차 컴백앨범 공구 확인 페이지')
+      |       
       .notice
-        p 폼기준 29일 오후 8시까지 업데이트
-        p 010-0000-0000 형태로 번호 입력해주세요.
-      form(action='/search' method='get' accept-charset="utf-8")
+        p
+          | &#xD3FC; &#xC791;&#xC131; &#xAE30;&#xC900; 
+          strong 30&#xC77C; 17&#xC2DC;
+          |  &#xC5C5;&#xB370;&#xC774;&#xD2B8;
+        |         
+        p
+          | &#xBC88;&#xD638; &#xC785;&#xB825; &#xC2DC; 
+          strong 010-0000-0000
+          |  &#xD615;&#xD0DC;&#xB85C; &#xC785;&#xB825;&#xD574;&#xC8FC;&#xC138;&#xC694;.
+      |       
+      form(action='/search', method='get', accept-charset='utf-8')
         .mainForm
           p.inputTag
-            input(type='text' name = 'name' class="input" placeholder='이름' required)
+            input.input(type='text', name='name', placeholder='이름', required='')
+          |           
           p.inputTag
-            input(type='text' name = 'phone' class="input" placeholder='번호' required)
+            input.input(type='text', name='phone', placeholder='번호', required='')
+        |         
         .link
-          a(href="http://antzip.net/index.php?mid=notice&document_srl=11823" target="_blank") antzip
+          a(href='http://antzip.net/index.php?mid=notice&document_srl=11823', target='_blank') antzip
+        |         
         .search
           p
-            input(type='submit' class="search_btn")
+            input.search_btn(type='submit')
+// JavaScript Document
