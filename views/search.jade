@@ -11,18 +11,19 @@ html
       .notice
       form
         .main
-          if check == false
-            p.info 찾을 수 없습니다.
+          if length == 0
+              p.info 찾을 수 없습니다.
           else
-            p.info 입금자명 <br/> #{check.name1}
-            p.info 이름 <br/> #{check.name2}
-            p.info 전화번호 <br/> #{check.phone}
-            p.info 주소 <br/> #{check.address}
-            br
-            p.info 이메일 <br/> #{check.email}
-            p.info 입금액 <br/> #{check.price}원
-            p.info 셋트개수 <br/> #{check.count}개
-            p.info 기타 <br/> #{check.etc}
+            - for (var i = 0 ; i < check.length ; i ++)
+              p.info 입금자명 <br/> #{check[i].name1}
+              p.info 이름 <br/> #{check[i].name2}
+              p.info 전화번호 <br/> #{check[i].phone}
+              p.info 주소 <br/> #{check[i].address}
+              br
+              p.info 이메일 <br/> #{check[i].email}
+              p.info 입금액 <br/> #{check[i].price}원
+              p.info 셋트개수 <br/> #{check[i].count}개
+              p.info 기타 <br/> #{check[i].etc}
         .link
           a(href="http://antzip.net/index.php?mid=notice&document_srl=11823" target="_blank") antzip
         .previous
